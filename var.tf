@@ -1,6 +1,6 @@
-aws_access_key = "AKIAXHWXZLDEI2WL6D3Z"
+variable "aws_access_key" {}
 
-aws_secret_key = "esvvJ+SV6PhfbFewVle4bDaJjaaoa76CSO5kMGiz"
+variable "aws_secret_key" {}
 
 variable "region" {
   default = "us-east-1"
