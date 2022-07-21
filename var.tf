@@ -10,6 +10,6 @@ variable "subnet1_cidr" {
   default = "172.16.1.0/24"
 }
 
-variable "subnet_cidr" {
+variable "subnet2_cidr" {
   default = "172.16.2.0/24"
 }
