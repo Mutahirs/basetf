@@ -19,14 +19,14 @@ resource "aws_subnet" "subnet1" {
   cidr_block = var.subnet1_cidr
   vpc_id = aws_vpc.vpc1.id
   map_public_ip_on_launch = "true"
-  availability_zone = data.aws_availability_zones.available.names[1]
+  #availability_zone = data.aws_availability_zones.available.names[1]
 }
 # SUBNET
 resource "aws_subnet" "subnet2" {
   cidr_block = var.subnet2_cidr
   vpc_id = aws_vpc.vpc1.id
   map_public_ip_on_launch = "true"
-  availability_zone = data.aws_availability_zones.available.names[2]
+  #availability_zone = data.aws_availability_zones.available.names[2]
 }
 
 # INTERNET_GATEWAY
@@ -49,6 +49,4 @@ resource "aws_route_table_association" "route-subnet1" {
   route_table_id = aws_route_table.route_table1.id
 }
 
-data "aws_availability_zones" "available" {
-  state = "available"
-}
+
