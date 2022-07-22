@@ -15,6 +15,7 @@ resource "aws_vpc" "vpc1" {
   
   tags = {
     Name = "red-vpc"   
+ }
 }
 
 # SUBNET
