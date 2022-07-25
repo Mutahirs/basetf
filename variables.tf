@@ -5,7 +5,7 @@
 
 variable "cluster_name" {
   type        = string
-  name        = "storm" 
+  default        = "storm" 
   description = "The name of AWS ECS cluster"
 }
 #variable "aws_access_key" {}
